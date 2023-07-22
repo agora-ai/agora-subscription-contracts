@@ -32,3 +32,8 @@ builder calculate_address_from_stateinit(int wc, cell state_init) inline {
     .end_cell();
     send_raw_message(msg, mode);
 }
+
+cell my_code() inline asm "MYCODE";
+int gas_consumed() inline asm "GASCONSUMED";
+int send_message(cell msg, int mode) inline asm "SENDMSG";
+int calculate_message_cost(cell msg, int mode) impure asm "1024 PUSHINT ADD SENDMSG";
