@@ -5,11 +5,11 @@ This repository contains the contracts associated with the Agora AI subscription
 
 ### Main technical features
 
-- Subscription verification to be used on [AgoraAI backend](https://github.com/Hack-a-TONx/agora-ai-modules) verification.
-- `op::subscribe` to be called on the [AgoraAI WebApp](https://github.com/Hack-a-TONx/twaps).
+- Subscription verification to be used on [AgoraAI backend](https://github.com/agora-ai/agora-ai-modules) verification.
+- `op::subscribe` to be called on the [AgoraAI WebApp](https://github.com/agora-ai/agora-ai-twa).
 - User's subscriptions are retrievable by wallet address, through the service's Subscription Master contract.
 - New "subscription created" logs are stored as external-out messages in the Subscription Master shardchain.
-- All these are connected and accessible on [AgoraAI Bot](https://github.com/Hack-a-TONx/agora-module-bots)
+- All these are connected and accessible on [AgoraAI Bot](https://github.com/agora-ai/agora-ai-modules)
 
 ## 🏗 Architecture Overview
 Each AI service present in the Agora Marketplace will be bound to a Subscription Master contract. In order for the user to get access to the service, the user will need to subscribe to it. 
